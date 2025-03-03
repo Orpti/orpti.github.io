@@ -7,7 +7,7 @@ document.querySelector("img").addEventListener("click", function () {
 });
 document.querySelector("button").addEventListener("click", function () {
   let user = prompt("Please enter your name");
-  if (!user) {
+  if (user != "" && user != null) {
     document.querySelector("h1").textContent = "Welcome to my page, " + user;
   } else {
     document.querySelector("h1").textContent =
@@ -17,7 +17,7 @@ document.querySelector("button").addEventListener("click", function () {
 });
 if (!localStorage.getItem("name")) {
   let user = prompt("Please enter your name");
-  if (!user) {
+  if (user != "" && user != null) {
     document.querySelector("h1").textContent = "Welcome to my page, " + user;
   } else {
     document.querySelector("h1").textContent =
